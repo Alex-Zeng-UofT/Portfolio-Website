@@ -85,3 +85,10 @@ nav ul li a:hover::after {
 .about-col-2 {
     flex-basis: 60%;
 }
+
+.about-col-2 p{
+    margin-top: 13px;
+    line-height: 25px;
+    word-spacing: 2px;
+    text-justify: distribute-all-lines;
+}
