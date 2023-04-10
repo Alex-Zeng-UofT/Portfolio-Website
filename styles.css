@@ -163,4 +163,16 @@ nav ul li a:hover::after {
 
 .con {
     font-weight: 500;
+}  
+
+#awards ul li{
+    list-style: none;
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+#awards .highlight {
+    font-size: 16px;
 }
