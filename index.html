@@ -44,28 +44,33 @@
                         diverse world we live in.
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Education</p>
-                        <p class="tab-links">Competencies</p>
-                        <p class="tab-links">Awards</p>
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('competencies')">Competencies</p>
+                        <p class="tab-links" onclick="opentab('awards')">Awards</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-content" id="education">
                         <ul>
                             <li>University of Toronto&emsp; &emsp; &ensp;<span class="highlight">Sep 2021 </span><span>- Present  &ensp;</span>
                                 <span class="highlight">GPA: </span><span>3.8/4.0</span>
-                                <p>&emsp; &emsp; <span id="dot" class="highlight">•</span> 
-                                    Software Engineering Specialist, Computer Science</p>
-                                    <p>&emsp; &emsp; <span id="dot" class="highlight">•</span> 
-                                    Minor, Statistics</p></li>
-                            <li>Windermere Secondary &ensp; &ensp;<span class="highlight">Sep 2016 </span><span>- Jul 2021  &ensp;</span>
+                                <p class="con">&emsp; &emsp; <span id="dot" class="highlight">•</span> 
+                                Software Engineering Specialist, Computer Science</p>
+                                <p class="con">&emsp; &emsp; <span id="dot" class="highlight">•</span> 
+                                Minor, Statistics</p></li>
+                            <li>Windermere Secondary &ensp;&emsp;<span class="highlight">Sep 2016 </span><span>- Jul 2021  &ensp;</span>
                                 <span class="highlight">GPA: </span><span>4.0/4.0</span>
-                                <p>&emsp; &emsp; <span id="dot" class="highlight">•</span> 
+                                <p class="con">&emsp; &emsp; <span id="dot" class="highlight">•</span> 
                                 British Columbia Diploma of Graduation</p></li>
                         </ul>
                     </div>
+                    <div class="tab-contents" id="competencies">JAVA</div>
+                    <div class="tab-contents" id="awards">DEANS LIST</div>
                 </div>
                 
             </div>
         </div>
     </div>
+
+<script src="app.js"></script>
+
 </body>
 </html>

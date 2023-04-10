@@ -65,7 +65,6 @@ nav ul li a:hover::after {
 
 #about {
     padding: 80px 0;
-    
 }
 
 .row {
@@ -130,11 +129,20 @@ nav ul li a:hover::after {
     width: 100%
 }
 
-.tab-contents ul li{
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-content {
+    display: block;
+}
+
+#education ul li{
     list-style: none;
-    margin: 12px 0;
+    margin: 20px 0;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 28px;
+    font-weight: 600;
 }
 
 .highlight {
@@ -151,4 +159,8 @@ nav ul li a:hover::after {
 
 .tab-contents p {
     font-size: 15px;
+}
+
+.con {
+    font-weight: 500;
 }
