@@ -176,3 +176,30 @@ nav ul li a:hover::after {
 #awards .highlight {
     font-size: 16px;
 }
+
+.proj {
+    font-size: 50px;
+    margin: 20px 10px;
+}
+
+.proj::first-letter {
+    color: #780aa7;
+}
+
+.project-col-1 {
+    margin-top: 30px;
+    flex-basis: 48%;
+}
+
+.project-col-1 img {
+    width: 100%;
+}
+
+.project-col-2 {
+    margin-top: 30px;
+    flex-basis: 48%;
+}
+
+.project-col-2 img {
+    width: 100%;
+}
