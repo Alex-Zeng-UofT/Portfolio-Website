@@ -188,18 +188,27 @@ nav ul li a:hover::after {
 
 .project-col-1 {
     margin-top: 30px;
-    flex-basis: 48%;
+    flex-basis: 40%;
 }
 
 .project-col-1 img {
     width: 100%;
+    height: 94%;
+    border-radius: 15px;
 }
 
 .project-col-2 {
     margin-top: 30px;
-    flex-basis: 48%;
+    flex-basis: 40%;
 }
 
 .project-col-2 img {
     width: 100%;
+    border-radius: 15px;
+}
+
+.p-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
