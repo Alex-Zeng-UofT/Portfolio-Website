@@ -59,12 +59,31 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-.logo {
+#header h1 {
+    margin-top: 20px;
     font-size: 80px;
+    font-weight: 550;
+}
+
+.logo {
+    margin-top: 20px;
+    font-size: 80px;
+    font-weight: 550;
 }
 
 #about {
-    padding: 80px 0;
+    padding: 40px 0;
+    position: relative;
+}
+
+#about::after {
+    content: '';
+    background: #780aa7;
+    width: 94%;
+    height: 3px;
+    left: 3%;
+    bottom: 0px;
+    position: absolute;
 }
 
 .row {
@@ -121,7 +140,7 @@ nav ul li a:hover::after {
     background: #780aa7;
     position: absolute;
     left: 0;
-    bottom: -8px;
+    bottom: -8%;
     transition: 0.5s;
 }
 
@@ -173,13 +192,35 @@ nav ul li a:hover::after {
     font-weight: 600;
 }
 
+.link {
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
 #awards .highlight {
     font-size: 16px;
 }
 
+.projects {
+    position: relative;
+    padding: 40px 0;
+}
+
+.projects::after {
+    content: '';
+    background: #780aa7;
+    width: 94%;
+    height: 3px;
+    left: 3%;
+    position: absolute;
+}
+
 .proj {
     font-size: 50px;
-    margin: 20px 10px;
 }
 
 .proj::first-letter {
@@ -187,28 +228,40 @@ nav ul li a:hover::after {
 }
 
 .project-col-1 {
-    margin-top: 30px;
     flex-basis: 40%;
 }
 
-.project-col-1 img {
+.p-row img {
     width: 100%;
-    height: 94%;
+    
     border-radius: 15px;
 }
 
 .project-col-2 {
-    margin-top: 30px;
     flex-basis: 40%;
 }
 
-.project-col-2 img {
-    width: 100%;
-    border-radius: 15px;
-}
 
 .p-row {
+    margin-top: 3%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+.projects span {
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.selections {
+    text-align: center;
+}
+
+.active-btn {
+    color: #780aa7;
+}
+
+.projects h2 {
+    margin-bottom: 8px;
 }

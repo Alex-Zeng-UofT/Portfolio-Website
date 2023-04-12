@@ -11,7 +11,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <h1 class="logo">Alex Zeng ©</h1>
+                <h1><span class="logo"></span></h1>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -65,7 +65,11 @@
                     <div class="tab-contents" id="competencies">JAVA</div>
                     <div class="tab-contents" id="awards">
                         <ul>
-                            <li><span class="highlight">Apr 2023</span><br>Meta Back-End Developer Professional Certificate&ensp; &ensp; &ensp;</li>
+                            <li><span class="highlight">Apr 2023</span><br>
+                                <a class="link" href="https://coursera.org/share/f04ae788ff32c40166828066fe95e042" target="_blank">Meta Back-End Developer Professional Certificate
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </a>
+                            </li>
                             <li><span class="highlight">Oct 2022 </span><br>Dean's List Scholar&emsp; &emsp; &ensp;</li>
                             <li><span class="highlight">Sep 2021 </span><br>University of Toronto Entrance Scholarship&emsp; &emsp; &ensp;</li>
                             <li><span class="highlight">Jul 2021 </span><br>The Bennie Ma Scholarship&emsp; &emsp; &ensp;</li>
@@ -82,17 +86,38 @@
             <h1 class="proj">My Projects</h1>
             <div class="p-row">
                 <div class="project-col-1">
+                    <h2>UofT Course Planner Android App <i class="fa-solid fa-arrow-up-from-bracket"></i></h2>
                     <img src="images/uoftapp.png"></img>
-                    
+                    <div class="selections">
+                        <span class="app active-btn">•</span>
+                        <span class="app">•</span>
+                    </div>
                 </div>
                 <div class="project-col-2">
-                    <img src="images/assembly-game.png"></img>
+                    <h2>&ensp;Assembly Platform Game <i class="fa-solid fa-arrow-up-from-bracket"></i></h2>
+                    <img src="images/game-menu.png" id="p2"></img>
+                    <div class="selections">
+                        <span class="game active-btn" onclick="change_game_img('images/game-menu.png')">•</span>
+                        <span class="game" onclick="change_game_img('images/assembly-game.png')">•</span>
+                        <span class="game" onclick="change_game_img('images/game-over.png')">•</span>
+                        <span class="game" onclick="change_game_img('images/game-win.png')">•</span>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
 
 <script src="app.js"></script>
-
+<script src="https://kit.fontawesome.com/3e24a42b1d.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed(".logo", {
+        strings : ["Alex Zeng ©","Alex Zeng ©","Alex Zeng ©","Alex Zeng ©"],
+        typeSpeed : 80,
+        backspeed : 400,
+        loop : true
+    })
+</script>
 </body>
 </html>
