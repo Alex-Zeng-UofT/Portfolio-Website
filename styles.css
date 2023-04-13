@@ -227,26 +227,26 @@ nav ul li a:hover::after {
     color: #780aa7;
 }
 
-.project-col-1 {
-    flex-basis: 40%;
-}
-
-.p-row img {
-    width: 100%;
-    
-    border-radius: 15px;
-}
-
-.project-col-2 {
-    flex-basis: 40%;
-}
-
-
 .p-row {
     margin-top: 3%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+}
+
+.project-col {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+}
+
+.project-col img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 15px;
+    display: block;
 }
 
 .projects span {
