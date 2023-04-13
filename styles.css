@@ -201,6 +201,10 @@ nav ul li a:hover::after {
     text-decoration: none;
 }
 
+.fa-solid {
+    color: #780aa7;
+}
+
 #awards .highlight {
     font-size: 16px;
 }
@@ -231,22 +235,21 @@ nav ul li a:hover::after {
     margin-top: 3%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    justify-content: space-evenly;
 }
 
 .project-col {
     position: relative;
     overflow: hidden;
-    width: 90%;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 .project-col img {
-    width: 100%;
+    width: 90%;
     height: auto;
     aspect-ratio: 1;
     border-radius: 15px;
-    display: block;
 }
 
 .projects span {
@@ -263,5 +266,6 @@ nav ul li a:hover::after {
 }
 
 .projects h2 {
-    margin-bottom: 8px;
+    text-align: center;
+    margin-bottom: 10px;
 }

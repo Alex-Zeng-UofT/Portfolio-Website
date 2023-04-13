@@ -1,6 +1,7 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var contents = document.getElementsByClassName("tab-contents");
 var game_btns = document.getElementsByClassName("game");
+var app_btns = document.getElementsByClassName("app");
 
 function opentab(tabname) {
 
@@ -22,4 +23,11 @@ function change_game_img(name) {
     }
     event.currentTarget.classList.add("active-btn");
     document.getElementById("p2").src=name;
+}
+
+function change_app_img(name) {
+    for (btn of app_btns) {
+        btn.classList.remove("active-btn")
+    }
+    event.currentTarget.classList.add("active-btn");
 }
