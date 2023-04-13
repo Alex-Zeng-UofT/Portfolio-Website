@@ -71,6 +71,30 @@ nav ul li a:hover::after {
     font-weight: 550;
 }
 
+.slogan {
+    margin: 50px 6%;
+    text-align: right;
+}
+
+.slo {
+    color: #fff;
+    font-size: 90px;
+    margin: -10px;
+    font-weight: 550;
+}
+
+.slo::first-letter {
+    color: #bd79db;
+}
+
+.fa-location-dot {
+    color: #9f59be; 
+}
+
+.location {
+    margin-top: 15px;
+}
+
 #about {
     padding: 40px 0;
     position: relative;
@@ -201,7 +225,7 @@ nav ul li a:hover::after {
     text-decoration: none;
 }
 
-.fa-solid {
+.fa-arrow-up-from-bracket {
     color: #780aa7;
 }
 
@@ -246,6 +270,7 @@ nav ul li a:hover::after {
 }
 
 .project-col img {
+    margin-top: 10px;
     width: 90%;
     height: auto;
     aspect-ratio: 1;
@@ -265,7 +290,9 @@ nav ul li a:hover::after {
     color: #780aa7;
 }
 
-.projects h2 {
-    text-align: center;
-    margin-bottom: 10px;
+.plink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 550;
 }
