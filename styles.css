@@ -79,12 +79,13 @@ nav ul li a:hover::after {
 .slo {
     color: #fff;
     font-size: 90px;
-    margin: -10px;
+    margin: -15px;
     font-weight: 550;
 }
 
 .slo::first-letter {
     color: #bd79db;
+    font-size: 94px;
 }
 
 .fa-location-dot {
@@ -92,7 +93,7 @@ nav ul li a:hover::after {
 }
 
 .location {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 #about {
@@ -258,7 +259,7 @@ nav ul li a:hover::after {
 .p-row {
     margin-top: 3%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .project-col {
@@ -271,7 +272,7 @@ nav ul li a:hover::after {
 
 .project-col img {
     margin-top: 10px;
-    width: 90%;
+    width: 80%;
     height: auto;
     aspect-ratio: 1;
     border-radius: 15px;

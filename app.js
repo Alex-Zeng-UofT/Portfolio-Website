@@ -30,4 +30,5 @@ function change_app_img(name) {
         btn.classList.remove("active-btn")
     }
     event.currentTarget.classList.add("active-btn");
+    document.getElementById("p1").src=name;
 }
