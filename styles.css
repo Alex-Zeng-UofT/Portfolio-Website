@@ -271,19 +271,25 @@ nav ul li a:hover::after {
     align-items: center;
 }
 
-.project-col img {
+.image img {
     margin: 0 auto;
-    margin-top: 10px;
     width: 100%;
     height: auto;
     aspect-ratio: 1;
     border-radius: 15px;
+    transition: transform 0.5s;
+    overflow: hidden;
 }
 
 .image {
     position: relative;
     width: 80%;
+    height: auto;
+    aspect-ratio: 1;
     margin: 0 auto;
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
 .projects span {
@@ -307,14 +313,14 @@ nav ul li a:hover::after {
 }
 
 .layer {
-    visibility: hidden;
+    opacity: 0;
     width: 100%;
     height: auto;
     aspect-ratio: 1;
     background: linear-gradient(rgba(0,0,0,0.8), #290339);
     border-radius: 15px;
     left: 0;
-    top: 10px;
+    top: 0px;
     position: absolute;
     display: flex;
     align-items: center;
@@ -322,7 +328,6 @@ nav ul li a:hover::after {
     justify-content: center;
     padding: 20px;
     line-height: 20px;
-    transition: height 0.5s;
 }
 
 .layer h3 {
@@ -342,6 +347,11 @@ nav ul li a:hover::after {
     font-size: 24px;
 }
 
+.image:hover img{
+    transform: scale(1.1);
+}
+
 .image:hover .layer {
-    visibility: visible;
+    transition: opacity 0.5s ease-in;
+    opacity: 1;
 }
