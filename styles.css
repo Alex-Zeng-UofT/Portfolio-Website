@@ -136,16 +136,18 @@ nav ul li a:hover::after {
 
 .about-col-1 {
     flex-basis: 35%;
+    margin: 0 auto;
 }
 
 .about-col-1 img {
-    width: 95%;
+    width: 100%;
     height: auto;
     border-radius: 15px;
 }
 
 .about-col-2 {
     flex-basis: 60%;
+    margin: 0 auto;
 }
 
 .about-col-2 h1{
@@ -530,6 +532,13 @@ form input, form textarea {
     }
 }
 
+@media only screen and (max-width: 870px) {
+    .line {
+        display: block;
+        margin: 5px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .logo {
         margin-left: 10px;
@@ -558,6 +567,12 @@ form input, form textarea {
     .tab-links {
         font-size: 16px;
         margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .c-left, .c-right {
+        flex-basis: 100%;
     }
 }
 
