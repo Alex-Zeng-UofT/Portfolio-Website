@@ -12,12 +12,14 @@
         <div class="container">
             <nav>
                 <h1><span class="logo"></span></h1>
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="">Connect</a></li>
+                <ul id="menu">
+                    <li><a href="#header" onclick="closeSide()">Home</a></li>
+                    <li><a href="#about" onclick="closeSide()">About</a></li>
+                    <li><a href="#projects" onclick="closeSide()">Projects</a></li>
+                    <li><a href="#connect" onclick="closeSide()">Connect</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeSide()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="displaySide()"></i>
             </nav>
             <div class="slogan"> 
                 <p class="slo first">Aspiring</p>

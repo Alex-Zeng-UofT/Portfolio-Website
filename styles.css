@@ -67,6 +67,11 @@ nav ul li a::after{
     transition: 0.5s;
 }
 
+nav .fa-solid {
+    cursor: pointer;
+    display: none;
+}
+
 nav ul li a:hover::after {
     width: 100%;
 }
@@ -84,7 +89,7 @@ nav ul li a:hover::after {
 }
 
 .slogan {
-    margin: 50px 6%;
+    margin: 10vh 6%;
     text-align: right;
 }
 
@@ -478,4 +483,69 @@ form input, form textarea {
     text-align: center;
     color: green;
     margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1080px) {
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #780aa7;
+        position: fixed;
+        top: 0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        margin-left: 10px;
+        font-size: 50px;
+    }
+
+    #header h1 {
+        font-size: 60px;
+    }
+
+    .slo {
+        font-size: 60px;
+    }
+    .slo::first-letter {
+        font-size: 64px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .logo {
+        margin-left: 10px;
+        font-size: 40px;
+    }
+
+    #header h1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .slogan {
+        display: none;
+    }
 }
