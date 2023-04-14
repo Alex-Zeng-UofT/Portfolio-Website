@@ -67,7 +67,13 @@ nav ul li a::after{
     transition: 0.5s;
 }
 
-nav .fa-solid {
+nav .fa-solid{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+nav .fa-brands{
     cursor: pointer;
     display: none;
 }
@@ -504,10 +510,19 @@ form input, form textarea {
         font-size: 25px;
     }
 
+    nav .fa-brands {
+        display: block;
+        font-size: 25px;
+    }
+
     nav .fa-bars {
         margin-top: 10px;
     }
     
+    nav ul li a::after{
+        background: #fff;
+    }
+
     nav ul {
         background: #780aa7;
         position: fixed;
@@ -523,12 +538,46 @@ form input, form textarea {
         margin: 25px;
     }
 
-    nav ul .fa-solid {
+    nav ul .fa-xmark {
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
         color: #fff;
+    }
+
+    nav ul .fa-linkedin {
+        position: absolute;
+        bottom: 25px;
+        left: 10px;
+        cursor: pointer;
+        color: #fff;
+    }
+    nav ul .fa-github {
+        position: absolute;
+        bottom: 25px;
+        left: 40px;
+        cursor: pointer;
+        color: #fff;
+    }
+    nav ul .fa-instagram {
+        position: absolute;
+        bottom: 25px;
+        left: 73px;
+        cursor: pointer;
+        color: #fff;
+    }
+    nav ul .fa-laptop-code {
+        color: #fff;
+        position: absolute;
+        bottom: 25px;
+        left: 103px;
+        cursor: pointer;
+        
+    }
+
+    nav #menu {
+        transition: 0.5s;
     }
 }
 
@@ -539,7 +588,19 @@ form input, form textarea {
     }
 }
 
+@media only screen and (max-width: 790px) {
+    .about-col-1 {
+        flex-basis: 50%;
+        margin-bottom: 20px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
+
+    #header {
+        background-image: url("images/small.jpeg");
+    }
+
     .logo {
         margin-left: 10px;
         font-size: 50px;
@@ -560,7 +621,7 @@ form input, form textarea {
     }
 
     .about-col-1 {
-        flex-basis: 100%;
+        flex-basis: 60%;
         margin-bottom: 20px;
     }
 
@@ -572,6 +633,10 @@ form input, form textarea {
 
 @media only screen and (max-width: 450px) {
     .c-left, .c-right {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
         flex-basis: 100%;
     }
 }

@@ -40,8 +40,10 @@ function change_app_img(name) {
 
 function displaySide() {
     menu.style.right = "0";
+    menu.style.transform =""
 }
 
 function closeSide() {
     menu.style.right = "-150px";
+    menu.style.transform =""
 }
