@@ -393,8 +393,8 @@ nav ul li a:hover::after {
 }
 
 .c-right {
-    flex-basis: 60%;
-    
+    flex-basis: 50%;
+    margin: 0 auto;
 }
 
 .c-left p {
@@ -459,4 +459,12 @@ form input, form textarea {
 .sub-btn:hover {
     font-weight: 600;
     padding: 15px 47.5px;
+}
+
+.copyright {
+    text-align: center;
+    width: 100%;
+    padding: 18px;
+    background: #262626;
+    font-weight: 300;
 }
