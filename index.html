@@ -179,12 +179,14 @@
                     </div>
                 </div>
                 <div class="c-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="text" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Leave a Message"></textarea>
+                        <p id="msg"></p>
                         <button type="submit" class="sub-btn">Submit</button>
                     </form>
+                    
                 </div>
             </div>
         </div>
@@ -202,6 +204,24 @@
         typeSpeed : 80,
         loop : true
     })
+</script>
+<script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx2tBzay51KduJT-A61tXXrGq1ktSv2tBOUpkZA55X6c9HmXkI-KFtNlxVc4LqDY5L4/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "message sent succesfully!"
+                setTimeout(function(){
+                    msg.innerHTML =  ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
 </script>
 </body>
 </html>

@@ -427,6 +427,8 @@ nav ul li a:hover::after {
 .c-right form {
     width: 100%;
     margin-top: 15px;
+    text-align: center;
+    justify-content: center;
 }
 
 form input, form textarea {
@@ -440,9 +442,11 @@ form input, form textarea {
     font-size: 18px;
     font-weight: 550;
     border-radius: 6px;
+    position: relative;
 }
 
 .sub-btn {
+    
     display: block;
     margin: 0 auto;
     background: #780aa7;
@@ -467,4 +471,11 @@ form input, form textarea {
     padding: 18px;
     background: #262626;
     font-weight: 300;
+}
+
+#msg {
+    position: absolute;
+    text-align: center;
+    color: green;
+    margin-bottom: 10px;
 }
