@@ -592,6 +592,11 @@ form input, form textarea {
     nav #menu {
         transition: 0.5s;
     }
+
+    .line {
+        display: block;
+        margin: 5px;
+    }
 }
 
 @media only screen and (max-width: 870px) {
