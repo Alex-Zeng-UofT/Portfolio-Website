@@ -48,6 +48,11 @@ nav ul li {
     
 }
 
+nav .cpyright {
+    display: none;
+    text-align: center;
+}
+
 nav ul li a{
     color:#fff;
     text-decoration: none;
@@ -510,6 +515,7 @@ form input, form textarea {
         font-size: 25px;
     }
 
+
     nav .fa-brands {
         display: block;
         font-size: 25px;
@@ -548,21 +554,21 @@ form input, form textarea {
 
     nav ul .fa-linkedin {
         position: absolute;
-        bottom: 25px;
+        bottom: 120px;
         left: 10px;
         cursor: pointer;
         color: #fff;
     }
     nav ul .fa-github {
         position: absolute;
-        bottom: 25px;
+        bottom: 120px;
         left: 40px;
         cursor: pointer;
         color: #fff;
     }
     nav ul .fa-instagram {
         position: absolute;
-        bottom: 25px;
+        bottom: 120px;
         left: 73px;
         cursor: pointer;
         color: #fff;
@@ -570,10 +576,16 @@ form input, form textarea {
     nav ul .fa-laptop-code {
         color: #fff;
         position: absolute;
-        bottom: 25px;
+        bottom: 120px;
         left: 103px;
-        cursor: pointer;
-        
+        cursor: pointer;   
+    }
+
+    nav .cpyright {
+        display: block;
+        position: absolute;
+        bottom: 40px;
+        left: 3px;
     }
 
     nav #menu {
@@ -634,6 +646,10 @@ form input, form textarea {
 @media only screen and (max-width: 450px) {
     .c-left, .c-right {
         flex-basis: 100%;
+    }
+
+    #about .con {
+        font-size: 14px;
     }
 
     .about-col-1 {
