@@ -599,7 +599,7 @@ form input, form textarea {
     }
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 1160px) {
     .line {
         display: block;
         margin: 5px;
