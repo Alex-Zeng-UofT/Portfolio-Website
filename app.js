@@ -2,6 +2,11 @@ var tablinks = document.getElementsByClassName("tab-links");
 var contents = document.getElementsByClassName("tab-contents");
 var game_btns = document.getElementsByClassName("game");
 var app_btns = document.getElementsByClassName("app");
+var menu = document.getElementById("menu");
+
+window.onscroll = function() {
+    closeSide();
+}
 
 function opentab(tabname) {
 
@@ -31,4 +36,14 @@ function change_app_img(name) {
     }
     event.currentTarget.classList.add("active-btn");
     document.getElementById("p1").src=name;
+}
+
+function displaySide() {
+    menu.style.right = "0";
+    menu.style.transform =""
+}
+
+function closeSide() {
+    menu.style.right = "-150px";
+    menu.style.transform =""
 }

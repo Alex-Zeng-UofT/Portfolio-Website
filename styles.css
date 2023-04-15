@@ -48,6 +48,11 @@ nav ul li {
     
 }
 
+nav .cpyright {
+    display: none;
+    text-align: center;
+}
+
 nav ul li a{
     color:#fff;
     text-decoration: none;
@@ -67,6 +72,17 @@ nav ul li a::after{
     transition: 0.5s;
 }
 
+nav .fa-solid{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+nav .fa-brands{
+    cursor: pointer;
+    display: none;
+}
+
 nav ul li a:hover::after {
     width: 100%;
 }
@@ -84,7 +100,7 @@ nav ul li a:hover::after {
 }
 
 .slogan {
-    margin: 50px 6%;
+    margin: 10vh 6%;
     text-align: right;
 }
 
@@ -131,16 +147,18 @@ nav ul li a:hover::after {
 
 .about-col-1 {
     flex-basis: 35%;
+    margin: 0 auto;
 }
 
 .about-col-1 img {
-    width: 95%;
+    width: 100%;
     height: auto;
     border-radius: 15px;
 }
 
 .about-col-2 {
-    flex-basis: 60%;
+    flex-basis: 50%;
+    margin: 0 auto;
 }
 
 .about-col-2 h1{
@@ -164,6 +182,7 @@ nav ul li a:hover::after {
 }
 
 .tab-links {
+    margin-top: 20px;
     margin-right: 60px;
     font-size: 18px;
     font-weight: 600;
@@ -427,6 +446,9 @@ nav ul li a:hover::after {
 .c-right form {
     width: 100%;
     margin-top: 15px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
 }
 
 form input, form textarea {
@@ -440,9 +462,11 @@ form input, form textarea {
     font-size: 18px;
     font-weight: 550;
     border-radius: 6px;
+    position: relative;
 }
 
 .sub-btn {
+    
     display: block;
     margin: 0 auto;
     background: #780aa7;
@@ -467,4 +491,191 @@ form input, form textarea {
     padding: 18px;
     background: #262626;
     font-weight: 300;
+}
+
+#msg {
+    display: block;
+    position: absolute;
+    text-align: center;
+    color: green;
+    margin: 10px;
+}
+
+.line {
+    display: flex;
+}
+
+#about .cont {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1080px) {
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+
+    nav .fa-brands {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav .fa-bars {
+        margin-top: 10px;
+    }
+    
+    nav ul li a::after{
+        background: #fff;
+    }
+
+    nav ul {
+        background: #780aa7;
+        position: fixed;
+        top: 0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-xmark {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    nav ul .fa-linkedin {
+        position: absolute;
+        bottom: 120px;
+        left: 10px;
+        cursor: pointer;
+        color: #fff;
+    }
+    nav ul .fa-github {
+        position: absolute;
+        bottom: 120px;
+        left: 40px;
+        cursor: pointer;
+        color: #fff;
+    }
+    nav ul .fa-instagram {
+        position: absolute;
+        bottom: 120px;
+        left: 73px;
+        cursor: pointer;
+        color: #fff;
+    }
+    nav ul .fa-laptop-code {
+        color: #fff;
+        position: absolute;
+        bottom: 120px;
+        left: 103px;
+        cursor: pointer;   
+    }
+
+    nav .cpyright {
+        display: block;
+        position: absolute;
+        bottom: 40px;
+        left: 3px;
+    }
+
+    nav #menu {
+        transition: 0.5s;
+    }
+
+    .line {
+        display: block;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .line {
+        display: block;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .about-col-1 {
+        flex-basis: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #header {
+        background-image: url("images/small.jpeg");
+    }
+
+    .logo {
+        margin-left: 10px;
+        font-size: 50px;
+    }
+
+    #header h1 {
+        font-size: 60px;
+    }
+
+    .slo {
+        font-size: 60px;
+    }
+    .slo::first-letter {
+        font-size: 64px;
+    }
+    .slogan {
+        margin-top: 20vh;
+    }
+
+    .about-col-1 {
+        flex-basis: 60%;
+        margin-bottom: 20px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .c-left, .c-right {
+        flex-basis: 100%;
+    }
+
+    #about .con {
+        font-size: 14px;
+    }
+
+    .about-col-1 {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .logo {
+        margin-left: 10px;
+        font-size: 40px;
+    }
+
+    #header h1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .slogan {
+        display: none;
+    }
 }

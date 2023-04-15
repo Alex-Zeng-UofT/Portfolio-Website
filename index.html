@@ -12,12 +12,19 @@
         <div class="container">
             <nav>
                 <h1><span class="logo"></span></h1>
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#connect">Connect</a></li>
+                <ul id="menu">
+                    <li><a href="#header" onclick="closeSide()">Home</a></li>
+                    <li><a href="#about" onclick="closeSide()">About</a></li>
+                    <li><a href="#projects" onclick="closeSide()">Projects</a></li>
+                    <li><a href="#connect" onclick="closeSide()">Connect</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeSide()"></i>
+                    <a href="https://www.linkedin.com/in/alex-zeng-uoft" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Alex-Zeng-UofT" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/alex.zengg_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://leetcode.com/alex_zeng/" target="_blank"><i class="fa-solid fa-laptop-code"></i></a>
+                    <p class="cpyright">© Copyright <br>@Alex Wei Le Zeng</p>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="displaySide()"></i>
             </nav>
             <div class="slogan"> 
                 <p class="slo first">Aspiring</p>
@@ -57,41 +64,64 @@
                     </div>
                     <div class="tab-contents active-content" id="education">
                         <ul>
-                            <li>University of Toronto&emsp; &emsp; &ensp;<span class="highlight">Sep 2021 </span><span>- Present  &ensp;</span>
-                                <span class="highlight">GPA: </span><span>3.8/4.0</span>
+                            <li>
+                            <div class ="line">
+                                <p class="cont">University of Toronto&emsp;  &emsp; &emsp; &emsp; </p>
+                                <span class="highlight">Sep 2021 </span><span>&nbsp;- Present &ensp;</span>
+                                <span class="highlight">GPA: </span><span>&nbsp;3.8/4.0</span>
+                            </div>
                                 <p class="con">&emsp; &emsp; <span id="dot" class="highlight">•</span> 
                                     B.Sc. In Computer Science (Co-op)</p>
                                 <p class="con">&emsp; &emsp; <span id="dot" class="highlight">•</span> 
                                 Software Engineering Stream</p>
                                 <p class="con">&emsp; &emsp; <span id="dot" class="highlight">•</span> 
                                 Statistics Minor</p></li>
-                            <li>Windermere Secondary &ensp;&emsp;<span class="highlight">Sep 2016 </span><span>- Jul 2021  &ensp;</span>
-                                <span class="highlight">GPA: </span><span>4.0/4.0</span>
+                            <li>
+                                <div class="line">
+                                    <p class="cont">Windermere Secondary &ensp;&emsp;</p>
+                                    <span class="highlight">Sep 2016 </span><span>- Jul 2021  &ensp;</span>
+                                    <span class="highlight">GPA: </span><span>4.0/4.0</span>
+                                </div>
                                 <p class="con">&emsp; &emsp; <span id="dot" class="highlight">•</span> 
                                 British Columbia Diploma of Graduation</p></li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="competencies">
                         <ul>
-                            <li>Object-Oriented Programing
-                                <span class="con">&emsp; &ensp; <span id="dot" class="highlight">•</span> 
+                            <li>
+                                <div class="line">
+                                    <p class="cont">Object-Oriented Programming</p>
+                                    <span class="con">&emsp; &emsp; <span id="dot" class="highlight">•</span> 
                                     Java, Python, C++</span>
+                                </div>
                             </li>
-                            <li>Front-End
-                                <span class="con">&ensp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span id="dot" class="highlight">•</span> 
+                            <li>
+                                <div class="line">
+                                    <p class="cont">Front-End Development</p>
+                                    <span class="con">&emsp; &emsp; <span id="dot" class="highlight">•</span> 
                                     HTML, CSS, JavaScript</span>
+                                </div>
                             </li>
-                            <li>Back-End
-                                <span class="con">&emsp;&emsp;&emsp; &emsp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span id="dot" class="highlight">•</span> 
+                            <li>
+                                <div class="line">
+                                    <p class="cont">Back-End Development</p>
+                                    <span class="con">&emsp; &emsp; <span id="dot" class="highlight">•</span> 
                                     Django, REST, MySQL</span>
+                                </div>
                             </li>
-                            <li>Systems Programming
-                                <span class="con">&emsp; &emsp; &emsp; &emsp;<span id="dot" class="highlight">•</span> 
+                            <li>
+                                <div class="line">
+                                    <p class="cont">Systems Programming</p>
+                                    <span class="con">&emsp; &emsp; <span id="dot" class="highlight">•</span> 
                                     C, Linux Environment</span>
+                                </div>
                             </li>
-                            <li>Computer Architecture
-                                <span class="con">&emsp; &emsp; &emsp; &emsp;<span id="dot" class="highlight">•</span> 
-                                    Assembly, Logism-Evo</span>
+                            <li>
+                                <div class="line">
+                                    <p class="cont">Computer Architecture</p>
+                                    <span class="con">&emsp; &emsp; <span id="dot" class="highlight">•</span> 
+                                    Assembly, Logisim-Evo</span>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -179,12 +209,14 @@
                     </div>
                 </div>
                 <div class="c-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="text" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Leave a Message"></textarea>
                         <button type="submit" class="sub-btn">Submit</button>
+                        <p id="msg"></p>
                     </form>
+                    
                 </div>
             </div>
         </div>
@@ -202,6 +234,24 @@
         typeSpeed : 80,
         loop : true
     })
+</script>
+<script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx2tBzay51KduJT-A61tXXrGq1ktSv2tBOUpkZA55X6c9HmXkI-KFtNlxVc4LqDY5L4/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "message sent succesfully!"
+                setTimeout(function(){
+                    msg.innerHTML =  ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
 </script>
 </body>
 </html>
