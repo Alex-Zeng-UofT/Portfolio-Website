@@ -2,7 +2,7 @@ var tablinks = document.getElementsByClassName("tab-links");
 var contents = document.getElementsByClassName("tab-contents");
 var game_btns = document.getElementsByClassName("game");
 var app_btns = document.getElementsByClassName("app");
-var menu = document.getElementById("menu");
+var menu = document.getElementById("sideMenu");
 
 window.onscroll = function() {
     closeSide();
