@@ -10,7 +10,7 @@
 <body>
     <div id="header">
         <div class="container">
-            <section>
+            <section class="hdr">
                 <span class="star"></span>
                 <span class="star"></span>
                 <span class="star"></span>
@@ -47,12 +47,25 @@
     
     <div id="about">
         <div class="container">
+            <section class="abt">
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+            </section>
             <div class="row">
                 <div class="about-col-1">
                     <img src="images/me.JPEG">
                 </div>
                 <div class="about-col-2">
-                    <h1>About Me</h1>
+                    <h1><span class="sub"></span></h1>
                     <p class="about-description">Welcome to my portfolio! I'm Alex and I'm currently a
                         determined and adaptive 2nd year student pursuing a
                         Software Engineer Specialist in Computer Science, in 
@@ -154,7 +167,20 @@
 
     <div id="projects">
         <div class="container">
-            <h1 class="proj">My Projects</h1>
+            <section class="abt">
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+                <span class="float"></span>
+            </section>
+            <h1 class="proj"><span class="pro" style="font-size: 50px;"></span></h1>
             <div class="p-row">
                 <div class="project-col">
                     <a class="plink" href="https://github.com/Alex-Zeng-UofT/UofT-Course-Planner-Android-App" target="_blank">UofT Course Planner Android App 
@@ -203,7 +229,7 @@
         <div class="container">
             <div class="c-row">
                 <div class="c-left">
-                    <h1 class="proj">Let's Connect<br></h1>
+                    <h1 class="proj"><span class="cnt"></span></h1>
                     <div class="info">
                         <p><i class="fa-solid fa-envelope c"></i>&ensp; a.zeng@mail.utoronto.ca</p>
                         <p><i class="fa-solid fa-phone c"></i>&ensp; (604) 368-9308</p>
@@ -240,6 +266,21 @@
 <script>
     var typed = new Typed(".logo", {
         strings : ["Alex Zeng ©", "Alex Zeng ©", "Alex Zeng ©", "Alex Zeng ©"],
+        typeSpeed : 80,
+        loop : true
+    })
+    var typed = new Typed(".sub", {
+        strings : ["About me", "About me", "About me", "About me"],
+        typeSpeed : 80,
+        loop : true
+    })
+    var typed = new Typed(".pro", {
+        strings : ["My Projects", "My Projects", "My Projects", "My Projects"],
+        typeSpeed : 80,
+        loop : true
+    })
+    var typed = new Typed(".cnt", {
+        strings : ["Let's Connect", "Let's Connect", "Let's Connect", "Let's Connect"],
         typeSpeed : 80,
         loop : true
     })
