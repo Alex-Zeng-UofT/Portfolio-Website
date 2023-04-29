@@ -27,6 +27,13 @@
             
             <nav>
                 <h1><span class="logo"></span></h1>
+                <ul id="menu">
+                    <li><a href="#header" onclick="closeSide()">Home</a></li>
+                    <li><a href="#about" onclick="closeSide()">About</a></li>
+                    <li><a href="#projects" onclick="closeSide()">Projects</a></li>
+                    <li><a href="#connect" onclick="closeSide()">Connect</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="displaySide()"></i>
                 <ul id="sideMenu">
                     <li><a href="#header" onclick="closeSide()">Home</a></li>
                     <li><a href="#about" onclick="closeSide()">About</a></li>
@@ -39,7 +46,6 @@
                     <a href="https://leetcode.com/alex_zeng/" target="_blank"><i class="fa-solid fa-laptop-code"></i></a>
                     <p class="cpyright">© Copyright <br>@Alex Wei Le Zeng</p>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="displaySide()"></i>
             </nav>
             <div class="slogan"> 
                 <p class="slo first">Aspiring</p>
@@ -169,6 +175,9 @@
                 
             </div>
         </div>
+        <div class="navigator" id="anav" onclick="displaySide()">
+            <i class="fa-solid fa-bars" onclick="displaySide()"></i>
+        </div>
     </div>
 
     <div id="projects">
@@ -229,6 +238,9 @@
                 </div>
             </div>
         </div>
+        <div class="navigator" id="pnav"onclick="displaySide()">
+            <i class="fa-solid fa-bars" onclick="displaySide()"></i>
+        </div>
     </div>
 
     <div id="connect">
@@ -261,6 +273,9 @@
                 </div>
             </div>
         </div>
+        <div class="navigator" id="cnav" onclick="displaySide()">
+            <i class="fa-solid fa-bars" onclick="displaySide()"></i>
+        </div>
     </div>
     <div class="copyright">
         <p>© Copyright @ Alex Wei Le Zeng, 2023</p>
@@ -269,6 +284,17 @@
 <script src="app.js"></script>
 <script src="https://kit.fontawesome.com/3e24a42b1d.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<script>
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 100) { //use `this`, not `document`
+            $('.navigator').css('display','block');
+        }
+        else {
+            $('.navigator').css('display','none');
+        }
+    });
+</script>
 <script>
     var typed = new Typed(".logo", {
         strings : ["Alex Zeng ©", "Alex Zeng ©", "Alex Zeng ©", "Alex Zeng ©"],

@@ -8,6 +8,7 @@ window.onscroll = function() {
     closeSide();
 }
 
+
 function opentab(tabname) {
 
     for (link of tablinks) {

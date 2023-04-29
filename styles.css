@@ -13,12 +13,13 @@
     color:#780aa7;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background: #080808;
+    background: #111111;
     color: #fff;
 }
 
@@ -229,7 +230,7 @@ nav {
     flex-wrap: wrap
 }
 
-nav ul li {
+#menu li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
@@ -313,9 +314,126 @@ nav ul li a:hover::after {
     margin-top: 20px;
 }
 
+nav .fa-solid {
+    display: block;
+    font-size: 25px;
+}
+
+nav .fa-bars {
+    display: none;
+}
+
+nav .fa-brands {
+    display: block;
+    font-size: 25px;
+}
+
+nav .fa-bars {
+    margin-top: 10px;
+}
+
+#sideMenu li a::after{
+    background: #fff;
+}
+
+#sideMenu {
+    background: radial-gradient(rgb(140, 25, 181), #4b0769);;
+    position: fixed;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+nav ul li {
+    display: block;
+    margin: 25px;
+}
+
+nav ul .fa-xmark {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    color: #fff;
+}
+
+nav ul .fa-linkedin {
+    position: absolute;
+    bottom: 120px;
+    left: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+nav ul .fa-github {
+    position: absolute;
+    bottom: 120px;
+    left: 40px;
+    cursor: pointer;
+    color: #fff;
+}
+nav ul .fa-instagram {
+    position: absolute;
+    bottom: 120px;
+    left: 73px;
+    cursor: pointer;
+    color: #fff;
+}
+nav ul .fa-laptop-code {
+    color: #fff;
+    position: absolute;
+    bottom: 120px;
+    left: 103px;
+    cursor: pointer;   
+}
+
+nav .cpyright {
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: 3px;
+}
+
+nav #sideMenu {
+    transition: 0.5s;
+    z-index: 30;
+}
+
+.line {
+    display: block;
+    margin: 5px;
+}
+
 #about {
     padding: 40px 0;
     position: relative;
+}
+
+.navigator {
+    display: none;
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    background-color: #6b0a94;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    line-height: 100px;
+    justify-content: center;
+    text-align: center;
+    z-index: 20;
+}
+
+.navigator:hover {
+    cursor: pointer;
+    font-size: 55px;
+}
+
+.navigator .fa-bars {
+    color: #fff;
+    
 }
 
 #about::after {
@@ -408,11 +526,20 @@ nav ul li a:hover::after {
     font-size: 18px;
     line-height: 28px;
     font-weight: 600;
+    background-color: rgb(37, 36, 36);
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
+#competencies ul {
+    background-color: rgb(37, 36, 36);
+    border-radius: 20px;
+    padding: 8px 10px;
 }
 
 #competencies ul li{
     list-style: none;
-    margin: 20px 0 0;
+    margin: 20px;
     font-size: 18px;
     line-height: 28px;
     font-weight: 600;
@@ -444,6 +571,9 @@ nav ul li a:hover::after {
     font-size: 18px;
     line-height: 22px;
     font-weight: 600;
+    background-color: rgb(37, 36, 36);
+    border-radius: 20px;
+    padding: 6px 16px;
 }
 
 .link {
@@ -705,91 +835,12 @@ form input, form textarea {
 }
 
 @media only screen and (max-width: 1080px) {
-    nav .fa-solid {
-        display: block;
-        font-size: 25px;
+    #menu {
+        display: none;
     }
-
-
-    nav .fa-brands {
-        display: block;
-        font-size: 25px;
-    }
-
     nav .fa-bars {
-        margin-top: 10px;
-    }
-    
-    nav ul li a::after{
-        background: #fff;
-    }
-
-    nav ul {
-        background: #780aa7;
-        position: fixed;
-        top: 0;
-        right: -150px;
-        width: 150px;
-        height: 100vh;
-        padding-top: 50px;
-    }
-
-    nav ul li {
         display: block;
-        margin: 25px;
-    }
-
-    nav ul .fa-xmark {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-        color: #fff;
-    }
-
-    nav ul .fa-linkedin {
-        position: absolute;
-        bottom: 120px;
-        left: 10px;
-        cursor: pointer;
-        color: #fff;
-    }
-    nav ul .fa-github {
-        position: absolute;
-        bottom: 120px;
-        left: 40px;
-        cursor: pointer;
-        color: #fff;
-    }
-    nav ul .fa-instagram {
-        position: absolute;
-        bottom: 120px;
-        left: 73px;
-        cursor: pointer;
-        color: #fff;
-    }
-    nav ul .fa-laptop-code {
-        color: #fff;
-        position: absolute;
-        bottom: 120px;
-        left: 103px;
-        cursor: pointer;   
-    }
-
-    nav .cpyright {
-        display: block;
-        position: absolute;
-        bottom: 40px;
-        left: 3px;
-    }
-
-    nav #sideMenu {
-        transition: 0.5s;
-    }
-
-    .line {
-        display: block;
-        margin: 5px;
+        color:#fff;
     }
 }
 
@@ -848,6 +899,19 @@ form input, form textarea {
 }
 
 @media only screen and (max-width: 450px) {
+    .navigator {
+        right: 8%;
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+        line-height: 80px;
+    }
+
+    .navigator:hover {
+        cursor: pointer;
+        font-size: 45px;
+    }
+
     .c-left, .c-right {
         flex-basis: 100%;
     }
