@@ -531,6 +531,10 @@ nav #sideMenu {
     padding: 8px 16px;
 }
 
+#smaller {
+    display: none;
+}
+
 #competencies ul {
     background-color: rgb(37, 36, 36);
     border-radius: 20px;
@@ -842,12 +846,17 @@ form input, form textarea {
         display: block;
         color:#fff;
     }
+
+    
 }
 
 @media only screen and (max-width: 1160px) {
     .line {
         display: block;
         margin: 5px;
+    }
+    .c-left {
+        flex-basis: 50%;
     }
 }
 
@@ -856,9 +865,21 @@ form input, form textarea {
         flex-basis: 50%;
         margin-bottom: 20px;
     }
+
+    .c-left, .c-right {
+        flex-basis: 100%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
+
+    #bigger {
+        display: none;
+    }
+
+    #smaller {
+        display: block;
+    }
 
     .hdr {
         background-image: url("images/small.jpeg");
@@ -912,9 +933,7 @@ form input, form textarea {
         font-size: 45px;
     }
 
-    .c-left, .c-right {
-        flex-basis: 100%;
-    }
+    
 
     #about .con {
         font-size: 14px;
